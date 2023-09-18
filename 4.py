@@ -20,4 +20,4 @@ def save_as_parquet(mini_df):
     df.to_parquet(f"4_files/{file_name}.parquet")
     
 with ThreadPoolExecutor(max_workers=10) as executor:
-    executor.map(save_as_parquet, mini_dfs)
+    executor.map(save_as_parquet, mini_dfs) 
